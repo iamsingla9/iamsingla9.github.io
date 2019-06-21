@@ -155,7 +155,7 @@ function Validate(roll,name,age) {
 	var result = '';
 	var letters = /^[A-Za-z ]+$/;
 	if (isNaN(roll) || roll == '' || roll<0){
-		result += "Roll number should be numeric.\n";
+		result += "Roll number should be numeric and non negative.\n";
 	}
 	
 	if(!name.match(letters) || name == ''){  
@@ -163,7 +163,7 @@ function Validate(roll,name,age) {
 	}
 	
 	if(isNaN(age) || age == '' || age<0){  
-		result += "Age should be numeric.\n";
+		result += "Age should be numeric and non negative.\n";
 	}
 		
 	return(result);
