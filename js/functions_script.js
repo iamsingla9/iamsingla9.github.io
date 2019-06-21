@@ -74,9 +74,6 @@ function Add() {
 	else {
 		var result = Validate(roll,name,age);
 		if(result){
-			el.value = '';
-			e2.value = '';
-			e3.value = '';
 			window.alert(result);
 		}
 		else {
