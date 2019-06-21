@@ -147,7 +147,7 @@ function Search(){
 		ListSearch(roll)
 	}
 	else {
-		window.alert("Please fill the numeric roll number to search.");
+		window.alert("Please fill the roll number in numeric format to search.");
 	}
 }
 
