@@ -142,7 +142,7 @@ function Search(){
 	var el = document.getElementById('search_roll');
 	var roll = el.value;
 	el.value = '';
-	if(!isNaN(roll)) {
+	if(roll != '' && !isNaN(roll)) {
 		document.getElementById('search_results').style.display = 'block';
 		ListSearch(roll)
 	}
