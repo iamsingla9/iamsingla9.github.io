@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css"/>
+	</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<h2 class="text-primary">Standalone webpage</h3>
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Student Records</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<form action="javascript:void(0);" method="POST" class="form-inline" onsubmit="Add()">
+				<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th><label>Roll No. :</label></th>
+						<th><input type="text" id="roll" class="form-control"/></th>	
+					</tr>
+					<tr>
+						<th><label>Name:</label></th>
+						<th><input type="text" id="name" class="form-control"/></th>
+					</tr>
+					<tr>	
+						<th><label>Age:</label></th>
+						<th><input type="text" id="age" class="form-control"/></th>
+					</tr>
+					<tr>
+						<th><label>Gender:</label></th>
+						<th><select id="gender" class="form-control"/>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							</select></th>
+					</tr>
+				<thead>
+				</table>
+				<button type="submit" class="btn btn-primary form-control"><span class="glyphicon glyphicon-plus"></span> Add</button>
+			</form>
+			<br />
+			
+			<div id="search">	
+				<form action="javascript:void(0);" method="POST" class="form-inline" id="search" onsubmit="Search()">
+				<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th><label>Roll No. :</label></th>
+						<th><input type="text" id="search_roll" class="form-control"/></th>	
+					</tr>
+				<thead>
+				</table>
+				<button type="submit" class="btn btn-warning form-control"><span class="glyphicon glyphicon-update"></span> Search</button>
+				</form>
+				<br />
+				<div id="search_results">
+				<table class="table table-bordered">
+				<thead>	
+					<tr>
+						<th>Roll No.</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="search_list">
+				
+				</tbody>
+			</table>
+			</div>
+					
+			</div>
+			<br />
+			
+			<div id="edit">	
+				<form action="javascript:void(0);" method="POST" class="form-inline" id="update">
+					<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th><label>Roll No. :</label></th>
+						<th><input type="text" id="edit_roll" class="form-control"/></th>	
+					</tr>
+					<tr>
+						<th><label>Name:</label></th>
+						<th><input type="text" id="edit_name" class="form-control"/></th>
+					</tr>
+					<tr>	
+						<th><label>Age:</label></th>
+						<th><input type="text" id="edit_age" class="form-control"/></th>
+					</tr>
+					<tr>
+						<th><label>Gender:</label></th>
+						<th><select id="edit_gender"  class="form-control"/>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							</select></th>
+					</tr>
+				<thead>
+				</table>
+					<button type="submit" class="btn btn-warning form-control"><span class="glyphicon glyphicon-update"></span> Update</button>
+				</form>
+			</div>
+			<br />
+			<table class="table table-bordered">
+				<thead>	
+					<tr>
+						<th>Roll No.</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="name_list">
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="js/functions_script.js"></script>
+</html>
